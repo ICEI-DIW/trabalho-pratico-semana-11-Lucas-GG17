@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #00004e;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.cabecalho{
+    background-color: #0e0e30;
+    color: white;
+    border-radius: 20px;
+    height: 25vh;
+
+}
+
+.cabecalho h1{
+    margin-top: 2vh;
+    margin-left: 30vw;
+    font-size: 6vh;
+}
+
+#droplist{
+    display: none;
+}
+
+
+
+.cabecalho .menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cabecalho .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 5vh;
+}
+
+.cabecalho .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.cabecalho .menu ul li a:hover{
+    color: #FF0F7B;
+}
+
+/* Banner */
+.banner {
+    background-image: url('https://via.placeholder.com/1200x500.png?text=Imagem+1');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Ajuste a altura conforme necessário */
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Conteúdo do banner (texto centralizado) */
+.banner-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Títulos e parágrafos dentro do banner */
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Carrossel */
+.carousel-inner {
+    height: 100%;
+}
+
+/* Imagens do carrossel */
+.carousel-item img {
+    width: 100%; /* A largura ocupa 100% do container */
+    height: 100%; /* A altura ocupa 100% do container */
+    object-fit: cover; /* A imagem cobrirá o espaço sem distorcer */
+    object-position: center; /* A imagem será centralizada */
+    display: block; /* Garantindo que a imagem seja exibida como bloco */
+}
+
+/* Controle de navegação (setas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Estilo das setas de navegação */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+.carousel-indicators li {
+    background-color: #fff; 
+}
+
+.carousel-indicators .active {
+    background-color: #f8a700; 
+}
+
+
+#title-film{
+    color: white;
+    margin-top: 30vh;
+    margin-left: 5vw;
+    font-size: 4vh;
+}
+
+
+
+.filmes{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+   
+}
+.card-film{
+  
+    width: calc(22% - 16px);
+    background-color: #0e0e30;
+    vertical-align: top;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+   
+}
+
+.card-film h2:hover{
+    color: #FF0F7B;
+}
+
+.card-film img{
+    
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+   
+}
+
+.coments{
+    margin-top: 30vh;
+  
+}
+
+.coments h2{
+text-align: center;
+color: white;
+margin-right: 9vw;
+font-size: 4vh;
+}
+
+.coments form{
+    background-color: #0e0e30;
+    height: 40vh;
+    width: 30vw;
+    margin-left: 30vw;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.coments input{
+  
+    margin-top: 80px;
+    padding: 10px;
+    margin-left: 10vw;
+    border-radius: 12px;
+}
+.coments button{
+    margin-top: 40px;
+    margin-left: 11.5vw;
+    border-radius: 8px;
+    height: 4vh;
+    width: 7vw;
+}
+
+#msg{
+    display: block;
+    margin-top: 40px;
+    height: 8vh;
+    width: 10vw;
+    margin-left: 10vw;
+    resize: none;
+    border-radius: 8px;
+}
+
+
+.rodape{
+    margin-top: 20vh;
+    padding: 0;
+    height: 29vh;
+    width: 100%;
+    background-color: #0e0e30;
+    color: white;
+   
+}
+
+.rodape h2{
+    padding-top: 2vh;
+    margin-left: 12vw;
+}
+.rodape h3{
+    margin-left: 70vw;
+ }
+
+.rodape ul{
+    list-style: none;
+    margin-left: 10vw;
+    margin-top: 6vh;
+}
+
+.rodape ul li{
+    margin-top: 10px;
+    width: 14vw;
+}
+
+.rodape ul li a{
+    text-decoration: none;
+    color: white;
+}
+.rodape ul li a:hover{
+
+    color: #FF0F7B;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .cabecalho h1{
+        margin-left: 22vw;
+        font-size: 6.5vh;
+    }
+
+    .coments form{
+        background-color: #0e0e30;
+        height: 40vh;
+        width: 35vw;
+        margin-left: 30vw;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    
+    .coments input{
+      
+        margin-top: 80px;
+        padding: 10px;
+        margin-left: 9vw;
+        border-radius: 12px;
+        width: 14vw;
+    }
+
+
+    .coments button{
+        margin-top: 40px;
+        margin-left: 13.5vw;
+        border-radius: 8px;
+        height: 4vh;
+        width: 7vw;
+    }
+
+
+    #msg{
+        display: block;
+        margin-top: 40px;
+        height: 8vh;
+        width: 16vw;
+        margin-left: 9vw;
+        resize: none;
+        border-radius: 8px;
+    }
+
+    .rodape ul{
+        list-style: none;
+        margin-left: 10vw;
+        margin-top: 3vh;
+    }
+    
+    .rodape ul li{
+        margin-top: 3px;
+        width: 11vw;
+    }
+
+    .rodape h3{
+        margin-left: 12vw;
+     }
+
+    
+}
+
+@media screen and (max-width: 991px){
+
+    .cabecalho h1{
+        margin-left: 20vw;
+        font-size: 6vh;
+    }
+
+    .filmes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 10vh;
+        margin-left: 5vw;
+       
+    }
+
+
+    .card-film{
+  
+        width: calc(72% - 16px);
+        background-color: #0e0e30;
+        vertical-align: top;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 15px;
+        color: white;
+       
+    }
+
+
+    .coments form{
+        background-color: #0e0e30;
+        height: 40vh;
+        width: 35vw;
+        margin-left: 30vw;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    
+    .coments input{
+      
+        margin-top: 80px;
+        padding: 10px;
+        margin-left: 8vw;
+        border-radius: 12px;
+        width: 15vw;
+    }
+
+    .coments button{
+        margin-top: 40px;
+        margin-left: 13.5vw;
+        border-radius: 8px;
+        height: 4vh;
+        width: 7vw;
+    }
+
+
+    #msg{
+        display: block;
+        margin-top: 40px;
+        height: 8vh;
+        width: 16vw;
+        margin-left: 9vw;
+        resize: none;
+        border-radius: 8px;
+    }
+
+    .rodape ul{
+        list-style: none;
+        margin-left: 10vw;
+        margin-top: 3vh;
+    }
+    
+    .rodape ul li{
+        margin-top: 3px;
+        width: 20vw;
+    }
+
+    .rodape h3{
+        margin-left: 14vw;
+     }
+    
+}
+
+
+
+
+@media screen and (max-width: 767px){
+
+    .cabecalho h1{
+        margin-left: 15vw;
+        font-size: 6vh;
+    }
+
+    #droplist{
+        display: block;
+    }
+    .cabecalho .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        left: 4vw;
+        background-color: white;
+        border-radius: 12px;
+        width: 90%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+
+    .cabecalho .menu.ativo {
+        display: flex;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecalho .menu ul li a {
+        color: black;
+    }
+    .filmes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 10vh;
+        margin-left: 5vw;
+       
+    }
+
+
+    .card-film{
+  
+        width: calc(72% - 16px);
+        background-color: #0e0e30;
+        vertical-align: top;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 15px;
+        color: white;
+       
+    }
+
+
+    .coments form{
+        background-color: #0e0e30;
+        height: 40vh;
+        width: 35vw;
+        margin-left: 30vw;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    
+    .coments input{
+      
+        margin-top: 80px;
+        padding: 10px;
+        margin-left: 8vw;
+        border-radius: 12px;
+        width: 15vw;
+    }
+
+    .coments button{
+        margin-top: 40px;
+        margin-left: 13.5vw;
+        border-radius: 8px;
+        height: 4vh;
+        width: 9vw;
+    }
+
+
+    #msg{
+        display: block;
+        margin-top: 40px;
+        height: 8vh;
+        width: 16vw;
+        margin-left: 9vw;
+        resize: none;
+        border-radius: 8px;
+    }
+
+    .rodape ul{
+        list-style: none;
+        margin-left: 10vw;
+        margin-top: 3vh;
+    }
+    
+    .rodape ul li{
+        margin-top: 3px;
+        width: 20vw;
+    }
+    .rodape h3{
+        margin-left: 10vw;
+     }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .cabecalho h1{
+        margin-left: 10vw;
+        font-size: 6vh;
+    }
+
+    .cabecalho .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        left: 4vw;
+        background-color: white;
+        border-radius: 12px;
+        width: 90%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 100;
+    }
+
+    .cabecalho .menu.ativo {
+        display: flex;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecalho .menu ul li a {
+        color: black;
+    }
+
+    .coments form{
+        background-color: #0e0e30;
+        height: 40vh;
+        width: 45vw;
+        margin-left: 20vw;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+    
+    .coments input{
+      
+        margin-top: 80px;
+        padding: 10px;
+        margin-left: 14vw;
+        border-radius: 12px;
+        width: 15vw;
+    }
+
+    .coments button{
+        margin-top: 40px;
+        margin-left: 16vw;
+        border-radius: 8px;
+        height: 4vh;
+        width: 16vw;
+    }
+
+
+    #msg{
+        display: block;
+        margin-top: 40px;
+        height: 8vh;
+        width: 16vw;
+        margin-left: 15vw;
+        resize: none;
+        border-radius: 8px;
+    }
+
+    .rodape ul{
+        list-style: none;
+        margin-left: 10vw;
+        margin-top: 1vh;
+    }
+    
+    .rodape ul li{
+        margin-top: 3px;
+        width: 34vw;
+    }
+
+    .rodape h3{
+        margin-left: 17vw;
+     }
+    
+}
