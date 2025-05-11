@@ -4,10 +4,11 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Lucas Vieira Carvalho
+- Matricula: 891261
+- Proposta de projeto escolhida: Catálogo de filmes
+- Breve descrição sobre seu projeto: 
+Um site simples de catálogo de filmes oferece uma lista organizada de títulos, com informações como a sinopse. O usuário pode navegar facilmente pelos filmes e visualizar detalhes de cada título. O layout é clean e intuitivo e agora responsivo, sendo esse um modo para facilitar a experiência do usuário na exploração do catálogo, e agora com uma página de exibição dos detalhes de cada filme que é feita através de uma API via JSONServer que pode ser consumida via fetch nos arquvios js. 
 
 **Print do teste da API com visualização do JSON**
 
