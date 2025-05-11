@@ -1,18 +1,36 @@
 {
-  "usuarios": [
-    {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+  "filmes":[
+    { "id": 1, "titulo": "Vingadores", 
+        "imagem": "https://f.i.uol.com.br/fotografia/2013/01/07/227204-970x600-1.jpeg", 
+        "descricao": " Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender <br>a Terra de ameaças sem precedentes. Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo em prol da humanidade.", 
+        "previa": "Loki, o irmão de Thor...",
+        "categoria": "Ação", 
+        "autor": "Stan Lee", 
+        "data": "2012-04-27" 
     },
-    {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+    { "id": 2, "titulo": "The Batman", 
+        "imagem": "https://files.tecnoblog.net/wp-content/uploads/2022/04/batman.jpg",
+        "descricao": "Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis,<br> o vigilante solitário se estabelece como a personificação da vingança para a população.", 
+        "previa": " Após dois anos...",
+        "categoria": "Ação",
+        "autor": "Matt Reeves", 
+        "data": "2022-03-03" 
+    },
+    { "id": 3, "titulo": "Mufasa: O Rei Leão", 
+        "imagem": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/822D54D550B97C34D675DBA2BE53A7B3225FB337CEA4A707CD88D9C7BBE42A2F/scale?width=1200&aspectRatio=1.78&format=webp", 
+        "descricao": " Mufasa, um filhote órfão, perdido e sozinho, conhece um simpático leão chamado Taka, herdeiro de uma linhagem real. O encontro ao acaso dá início a uma grande jornada de um grupo <br> extraordinário em busca de seu destino, além de revelar a ascensão de um dos maiores reis das Terras do Orgulho.", 
+        "previa": "Mufasa, um filhote órfão...",
+        "categoria": "Drama/Ação", 
+        "autor": "Barry Jenkins", 
+        "data": "2024-12-19" 
+    },
+    { "id": 4, "titulo": "Bad Boys para sempre", 
+        "imagem": "https://s2-techtudo.glbimg.com/b9p98BWZvDnRFo-ibfJy8aWvvVU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/x/g/1sBrOaRtARQCoJZyXWnA/3q01acg0mwm0dekhvkpfcxypzsu.jpg", 
+        "descricao": "Os brincalhões polícias de Miami, Mike Lowrey e Marcus Burnett, embarcam em uma perigosa missão para limpar o nome do falecido capitão da polícia.", 
+        "previa": "Os brincalhões policiais...",
+        "categoria": "Drama/Ação", 
+        "autor": "George Gallo", 
+        "data": "2024-06-07" 
     }
-  ]
+]
 }
