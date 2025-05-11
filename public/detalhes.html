@@ -38,54 +38,7 @@
                 <h3>Desenvolvido por Lucas Vieira Carvalho</h3>
             </footer>
 
-        <script src="assets/scripts/app.js"></script>
-        <script>
-            let params = new URLSearchParams(location.search);
-            let id = Number(params.get('id'));
-
-            
-            let filmeEncontrado = filmes.find(function(elem){ 
-                return elem.id === id;
-            });
-
-            let exibir = document.getElementById('exibedetail');
-            let lightboxGallery = document.getElementById('lightbox-gallery');
-
-            if(filmeEncontrado) {
-                // Exibindo as informações gerais
-                exibir.innerHTML = `
-                    <h2>${filmeEncontrado.titulo}</h2>
-                    <img src="${filmeEncontrado.imagem}" alt="${filmeEncontrado.titulo}" class="img-fluid">
-                    <p>${filmeEncontrado.descricao}</p>
-                    <span>Autor: ${filmeEncontrado.autor} | Data: ${filmeEncontrado.data}</span>
-                `;
-
-                // Criando os links do lightbox para as fotos
-                if(filmeEncontrado.id) {
-                
-                    let fotosRelacionadas = fotos.find(item => item.itemId === id);
-                    if (fotosRelacionadas && fotosRelacionadas.fotos.length > 0) {
-                        fotosRelacionadas.fotos.forEach(foto => {
-                            let fotoElement = document.createElement('a');
-                            fotoElement.href = foto.src;
-                            fotoElement.classList.add('lightbox-thumbnail');
-                            fotoElement.setAttribute('data-bs-toggle', 'modal');
-                            fotoElement.setAttribute('data-bs-target', '#exampleModal');
-
-                            fotoElement.innerHTML = `
-                                <img src="${foto.src}" alt="${foto.titulo}" class="img-thumbnail">
-                            `;
-
-                            lightboxGallery.appendChild(fotoElement);
-                        });
-                    } else {
-                        lightboxGallery.innerHTML = 'Nenhuma foto disponível';
-                    }
-                }
-
-            } else {
-                exibir.innerHTML = 'Filme não encontrado';
-            }
-        </script>
+       
+        <script src="assets/scripts/details.js"></script>
   
     </body>

@@ -54,77 +54,98 @@ body {
 }
 
 /* Banner */
+/* Banner */
 .banner {
-    background-image: url('https://via.placeholder.com/1200x500.png?text=Imagem+1');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
     position: relative;
     overflow: hidden;
-    height: 500px; /* Ajuste a altura conforme necessário */
-    transition: background-image 0.5s ease-in-out;
+    height: 500px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: 6%;
 }
 
-/* Conteúdo do banner (texto centralizado) */
+/* Oculta os radio buttons */
+.slides input {
+    display: none;
+}
+
+/* Container dos slides */
+.slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Slide wrapper que será movido no eixo X */
+.slide-container {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: margin-left 1s;
+}
+
+/* Cada slide ocupa 100% da largura visível */
+.slide {
+   width: 20%;
+   height: 100%;
+    flex-shrink: 0;
+}
+
+/* Ajuste de imagem para não distorcer */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* <- ESSENCIAL para manter a proporção */
+}
+
+/* Navegação manual */
+.menu-navega {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+/* Conteúdo no centro do banner */
 .banner-conteudo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
-/* Títulos e parágrafos dentro do banner */
-.banner h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+/* Slide switching */
+#radio1:checked ~ .slide-container {
+    margin-left: 0%;
 }
-
-.banner p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+#radio2:checked ~ .slide-container {
+    margin-left: -100%;
 }
-
-/* Carrossel */
-.carousel-inner {
-    height: 100%;
-}
-
-/* Imagens do carrossel */
-.carousel-item img {
-    width: 100%; /* A largura ocupa 100% do container */
-    height: 100%; /* A altura ocupa 100% do container */
-    object-fit: cover; /* A imagem cobrirá o espaço sem distorcer */
-    object-position: center; /* A imagem será centralizada */
-    display: block; /* Garantindo que a imagem seja exibida como bloco */
-}
-
-/* Controle de navegação (setas) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: black;
-    border-radius: 50%;
-}
-
-/* Estilo das setas de navegação */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+#radio3:checked ~ .slide-container {
+    margin-left: -200%;
 }
 
 
-.carousel-indicators li {
-    background-color: #fff; 
-}
-
-.carousel-indicators .active {
-    background-color: #f8a700; 
-}
 
 
 #title-film{
